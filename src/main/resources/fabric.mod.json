@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "swift",
+  "version": "${version}",
+  "name": "Swift",
+  "description": "Human-like A* path generation for Minecraft!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://github.com/quiteboring/Swift",
+    "sources": "https://github.com/quiteboring/Swift"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/swift/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.quiteboring.swift.Swift"
+      }
+    ]
+  },
+  "mixins": [
+    "swift.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
